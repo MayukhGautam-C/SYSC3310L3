@@ -9,6 +9,12 @@ public class AddressBook {
         list = new LinkedList<>();
     }
 
+    public void printBuddies(){
+        for(BuddyInfo b: list){
+            System.out.println(b.name);
+        }
+    }
+
     public void add(BuddyInfo bi){
         list.add(bi);
     }
